@@ -1,5 +1,6 @@
 package com.yedam.variable;
 
+
 import java.util.Scanner;
 
 import javax.swing.plaf.basic.BasicLookAndFeel;
