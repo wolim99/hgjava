@@ -4,7 +4,6 @@ import java.util.Scanner;
 
 
 public class Todo0116 {
-	public class Main {
 	    public static void main(String[] args) {
 	        Scanner scn = new Scanner(System.in);
 
@@ -26,5 +25,5 @@ public class Todo0116 {
 	        System.out.println("<< end of prog >>");
 	        scn.close();
 	    }
-	}
+	
 }
