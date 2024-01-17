@@ -1,6 +1,5 @@
 package com.yedam.condition;
 
-
 public class ForLoopExe1 {
 	public static void main(String[] args) {
 		//

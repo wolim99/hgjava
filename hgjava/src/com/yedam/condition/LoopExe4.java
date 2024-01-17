@@ -1,6 +1,5 @@
 package com.yedam.condition;
 
-
 import javax.swing.Spring;
 
 public class LoopExe4 {

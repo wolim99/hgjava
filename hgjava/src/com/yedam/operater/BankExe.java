@@ -1,6 +1,5 @@
 package com.yedam.operater;
 
-
 import java.util.Scanner;
 
 // 은행계좌. 55000 - 50000 최대 금액 10만원 계좌 하나뿐임

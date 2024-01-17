@@ -1,6 +1,5 @@
 package com.yedam.condition;
 
-
 public class DoWhileExe3 {
 	public static void main(String[] args) {
 		boolean run = false;

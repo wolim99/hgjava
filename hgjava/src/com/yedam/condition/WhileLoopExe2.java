@@ -1,6 +1,5 @@
 package com.yedam.condition;
 
-
 import java.util.Scanner;
 
 public class WhileLoopExe2 {
