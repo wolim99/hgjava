@@ -1,5 +1,6 @@
 package com.yedam.condition;
 
+
 import java.util.Random;
 
 
