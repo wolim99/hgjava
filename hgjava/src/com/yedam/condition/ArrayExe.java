@@ -2,6 +2,7 @@ package com.yedam.condition;
 
 import java.util.Random;
 
+
 public class ArrayExe {
 	public static void main(String[] args) {
 		// 
