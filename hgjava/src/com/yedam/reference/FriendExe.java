@@ -101,36 +101,35 @@ public class FriendExe {
 				for (int i = 0; i < friends.length; i++) {
 					if (friends[i] != null && friends[i].score >= lll) {
 						cnt += friends[i].score;
-						System.out.printf("이 넘는 사람은 %s 점수는 %d점입니다.\n", friends[i].name, friends[i].score);
+						System.out.printf("이 넘는 사람은 %s 점수는 %d점입니다.\n",friends[i].name ,friends[i].score);
 					}
-				}
-				if (cnt == 0) {
-					System.out.println(" 넘는 사람이 아무도 없습니다.");
-				}
+				}if(cnt == 0) {
+						System.out.println(" 넘는 사람이 아무도 없습니다.");
+					}
 				break;
 			case 6: // 분석 - 평균점수 : 85, 최고점수: 90점
-				double avg = 0;
-				int sum = 0;
-				int max = 0;
-				int count = 0; // 실제 정보가 저장된 요소의 수를 세는 변수
+			    double avg = 0;
+			    int sum = 0;
+			    int max = 0;
+			    int count = 0; 
 
-				for (int i = 0; i < friends.length; i++) {
-					if (friends[i] != null) { // null이 아닌 요소에 대해서만 처리
-						sum += friends[i].score;
-						count++; // 정보가 있는 요소의 수를 센다
-						if (max < friends[i].score) {
-							max = friends[i].score;
-						}
-					}
-				}
+			    for (int i = 0; i < friends.length; i++) {
+			        if (friends[i] != null) { // null이 아닌 요소에 대해서만 처리
+			            sum += friends[i].score;
+			            count++; 
+			            if (max < friends[i].score) {
+			                max = friends[i].score;
+			            }
+			        }
+			    }
 
-				if (count > 0) {
-					avg = (double) sum / count; // 실제 정보가 있는 요소의 수로 평균 계산
-					System.out.printf("학생들의 총점: %d 이고 평균: %.1f 최고 점수: %d입니다\n", sum, avg, max);
-				} else {
-					System.out.println("등록된 친구 정보가 없습니다.");
-				}
-				break;
+			    if (count > 0) {
+			        avg = (double) sum / count; // 실제 정보가 있는 요소의 수로 평균 계산
+			        System.out.printf("학생들의 총점: %d 이고 평균: %.1f 최고 점수: %d입니다\n", sum, avg, max);
+			    } else {
+			        System.out.println("등록된 친구 정보가 없습니다.");
+			    }
+			    break;
 			case 9: // 종료(Exit)
 				run = false;
 				System.out.println("종료합니다.");
