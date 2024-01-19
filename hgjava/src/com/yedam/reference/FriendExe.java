@@ -112,20 +112,20 @@ public class FriendExe {
 				double avg = 0;
 				int sum = 0;
 				int max = 0;
-				int count = 0; // 실제 정보가 저장된 요소의 수를 세는 변수
+				int cnt1 = 0; // 실제 정보가 저장된 요소의 수를 세는 변수
 
 				for (int i = 0; i < friends.length; i++) {
 					if (friends[i] != null) { // null이 아닌 요소에 대해서만 처리
 						sum += friends[i].score;
-						count++; // 정보가 있는 요소의 수를 센다
+						cnt1++; // 정보가 있는 수를 센다
 						if (max < friends[i].score) {
 							max = friends[i].score;
 						}
 					}
 				}
 
-				if (count > 0) {
-					avg = (double) sum / count; // 실제 정보가 있는 요소의 수로 평균 계산
+				if (cnt1 > 0) {
+					avg = (double) sum / cnt1; // 실제 정보가 있는 수로 평균 계산
 					System.out.printf("학생들의 총점: %d 이고 평균: %.1f 최고 점수: %d입니다\n", sum, avg, max);
 				} else {
 					System.out.println("등록된 친구 정보가 없습니다.");
