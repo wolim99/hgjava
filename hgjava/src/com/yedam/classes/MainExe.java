@@ -108,7 +108,7 @@ public class MainExe {
 			case 4: // 삭제
 				remove();
 				break;
-			case 5: // 단건조회
+			case 5: // 검색
 				search();
 				break;
 			case 9: // 종료
