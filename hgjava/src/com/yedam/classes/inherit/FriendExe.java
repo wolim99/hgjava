@@ -88,7 +88,7 @@ public class FriendExe {
 				} else if(frnd instanceof CompFriend) {
 					System.out.print("회사>>");
 					info1 = scn.nextLine();
-					System.out.print("전공>>");
+					System.out.print("부서>>");
 					info2 = scn.nextLine();
 				}
 				if(app.modify(fphone, info1, info2)) {
@@ -98,7 +98,7 @@ public class FriendExe {
 				}
 				break;
 				
-			case 4:
+			case 4: // 삭제
 				
 			case 9: //종료
 				run = false;
