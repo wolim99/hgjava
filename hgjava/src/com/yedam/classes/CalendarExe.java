@@ -28,8 +28,38 @@ public class CalendarExe {
 	}
 	
 	static void drawCalemdar(Date date) {
-		
+	    Calendar cal = Calendar.getInstance();
+	    cal.setTime(date); // Date 객체를 이용하여 Calendar 객체 설정
+
+	    int year = cal.get(Calendar.YEAR);
+	    int month = cal.get(Calendar.MONTH);
+	    cal.set(year, month, 1); // 해당 월의 첫 번째 날로 설정
+
+	    int pos = cal.get(Calendar.DAY_OF_WEEK) - 1;
+	    int lastDate = cal.getActualMaximum(Calendar.DATE);
+
+	    // 요일 출력
+	    String[] days = { "Sun", "Mon", "Tue", "Wed", "Thr", "Fri", "Sat" };
+	    for (String day : days) {
+	        System.out.printf("%4s", day);
+	    }
+	    System.out.println();
+
+	    // 해당 월의 첫 번째 날까지 공백으로 채움
+	    for (int i = 0; i < pos; i++) {
+	        System.out.printf("%4s", "");
+	    }
+
+	    // 날짜 출력
+	    for (int d = 1; d <= lastDate; d++) {
+	        System.out.printf("%4d", d);
+	        if ((d + pos) % 7 == 0) { // 줄바꿈 조건
+	            System.out.println();
+	        }
+	    }
+	    System.out.println();
 	}
+
 	
 	static void drawCalendar(int year, int month) {
 		// (2024, 1)
