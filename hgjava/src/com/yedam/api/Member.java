@@ -1,5 +1,6 @@
 package com.yedam.api;
 
+
 public class Member extends Object{
 	String name;
 	int age;

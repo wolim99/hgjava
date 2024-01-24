@@ -2,4 +2,3 @@ sample.txt
 Hello
 World
 Nice
-sss
