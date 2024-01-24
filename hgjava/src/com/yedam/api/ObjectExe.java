@@ -1,6 +1,5 @@
 package com.yedam.api;
 
-
 public class ObjectExe {
 	public static void main(String[] args) {
 		
