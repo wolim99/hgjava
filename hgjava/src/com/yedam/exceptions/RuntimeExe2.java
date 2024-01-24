@@ -1,5 +1,6 @@
 package com.yedam.exceptions;
 
+
 public class RuntimeExe2 {
 	public static void main(String[] args) {
 

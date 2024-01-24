@@ -1,5 +1,6 @@
 package com.yedam.interfaces.emp;
 
+
 public class Employee {
 	private int employeeId;           // 사원 번호
 	private String name;             // 사원 이름
