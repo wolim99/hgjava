@@ -78,9 +78,9 @@ public class MainExe {
 		System.out.println("찾을 학생을 코드로 적어주세요");
 		sno = scn.nextLine();
 		Student s1 = StudentApp.get(sno);
-		if(s1 != null) {
+		if (s1 != null) {
 			s1.showInfo();
-		}else {
+		} else {
 			System.out.println("없는 학생입니다.");
 		}
 	}
