@@ -1,5 +1,6 @@
 package com.yedam.collection;
 
+
 public class Box<T> {
 	T obj;
 	
