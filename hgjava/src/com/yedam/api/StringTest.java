@@ -26,11 +26,31 @@ public class StringTest {
 	}
 
 	private static void checkName(String fri) {
+	    int count = 0;
 
+	    if (fri.contains("길동")) {
+	        count++;
+	    }
+
+	    System.out.println("이름에 '길동'이 포함된 횟수: " + count);
 	}
+
 
 	private static void checkGender(String ssn) {
+	    if (ssn.length() == 14) {
+	        char genderCode = ssn.charAt(7); // 성별 구분 코드 추출
 
+	        if (genderCode == '1' || genderCode == '3') {
+	            System.out.println(ssn + "은(는) 남자입니다.");
+	        } else if (genderCode == '2' || genderCode == '4') {
+	            System.out.println(ssn + "은(는) 여자입니다.");
+	        } else {
+	            System.out.println(ssn + "은(는) 잘못된 성별 코드입니다.");
+	        }
+	    } else {
+	        System.out.println(ssn + "은(는) 잘못된 주민등록번호 형식입니다.");
+	    }
 	}
+
 
 }
