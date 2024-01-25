@@ -1,5 +1,6 @@
 package com.yedam.collection;
 
+
 import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
@@ -18,7 +19,7 @@ public class SetExe2 {
 		System.out.println(members.size());
 		
 		System.out.println("--------------");
-		// 반복된 요소를 선택해서 가져오는 반복자
+		// 반복된 요소를 선택해서 가져오는 반복
 		Iterator<Member> iter = members.iterator();
 		while(iter.hasNext()) {
 			Member member = iter.next();

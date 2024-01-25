@@ -1,6 +1,5 @@
 package com.yedam.exceptions;
 
-
 public class RuntimeExe2 {
 	public static void main(String[] args) {
 
@@ -26,3 +25,4 @@ public class RuntimeExe2 {
 		System.out.println("end of prog");
 	}
 }
+

@@ -1,5 +1,6 @@
 package com.yedam.collection;
 
+
 public class Member {
 	private int mid;
 	private String name;
