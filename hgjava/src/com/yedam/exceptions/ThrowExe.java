@@ -1,6 +1,5 @@
 package com.yedam.exceptions;
 
-
 public class ThrowExe {
 	public static void main(String[] args) {
 		try {

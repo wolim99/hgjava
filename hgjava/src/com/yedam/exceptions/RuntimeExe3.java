@@ -1,6 +1,5 @@
 package com.yedam.exceptions;
 
-
 import java.util.Scanner;
 
 public class RuntimeExe3 {

@@ -7,7 +7,6 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Date;
 
-
 public class DateExe {
 	public static void main(String[] args) {
 		Date today = new Date();
