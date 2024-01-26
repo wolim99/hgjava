@@ -19,13 +19,21 @@ public class EmpExe {
 			int menu = Integer.parseInt(scn.nextLine());
 			switch (menu) {
 			case 1: // "사원번호 이름 입사일자 급여" yy-MM-dd
-
-				String input = scn.nextLine();
-				String[] inputs = input.split(" ");
-				Employee emp = new Employee(0, " ", new Date(), 0);
+				System.out.println("사원번호 이름 입사일자 급여>>");
+				String str = scn.nextLine();
+				String[] strAry = str.split(" ");
 				SimpleDateFormat sdf = new SimpleDateFormat("yy-MM-dd");
-				
-				
+				Employee emp = null;
+
+				try {
+					emp = new Employee(Integer.parseInt(strAry[0]),
+									  strAry[1],
+									  sdf.parse(strAry[2]),
+									  Integer.parseInt(strAry[3]));
+				} catch(Exception e) {
+					System.out.println("날자오류");
+					break;
+				}
 				if (app.add(emp)) {
 					System.out.println("등록완료");
 				} else {
