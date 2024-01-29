@@ -5,7 +5,7 @@ import java.text.ParseException;
 
 public class StringTest {
 	public static void main(String[] args) throws ParseException {
-		// 1번문제 데이터 성결구분
+		// 1번문제 데이터 성별구분
 		String[] jumins = { "970101-1234567" // 남자
 				, "9701012234567" // 여자
 				, "971201 1594235" // 남자

@@ -50,7 +50,7 @@
 //			}
 //		}
 //		
-//		System.out.println("end od prog");
+//		System.out.println("end of prog");
 //
 //		
 //	}
